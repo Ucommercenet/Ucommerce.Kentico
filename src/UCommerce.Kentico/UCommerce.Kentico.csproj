@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB309635-927B-444D-8A50-D1D550D8E177}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCommerce.Kentico</RootNamespace>
+    <AssemblyName>UCommerce.Kentico</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AuthorizeNet, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AuthorizeNet.1.8.3\lib\AuthorizeNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Braintree-2.22.0, Version=2.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Braintree.2.22.0\lib\Braintree-2.22.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Facilities.AspNet.SystemWeb, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Facilities.AspNet.SystemWeb.5.0.0\lib\net45\Castle.Facilities.AspNet.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.5.0.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core, Version=1.9.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency.1.9.9\lib\net45\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Activities">
+      <HintPath>..\..\lib\Kentico\10\CMS.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Base, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Base.Web.UI">
+      <HintPath>..\..\lib\Kentico\10\CMS.Base.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ContactManagement">
+      <HintPath>..\..\lib\Kentico\10\CMS.ContactManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DataEngine, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.DataEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DocumentEngine">
+      <HintPath>..\..\lib\Kentico\10\CMS.DocumentEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DocumentEngine.Web.UI">
+      <HintPath>..\..\lib\Kentico\10\CMS.DocumentEngine.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.EmailEngine">
+      <HintPath>..\..\lib\Kentico\10\CMS.EmailEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.EventLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.FormEngine.Web.UI">
+      <HintPath>..\..\lib\Kentico\10\CMS.FormEngine.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Helpers, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.IO">
+      <HintPath>..\..\lib\Kentico\10\CMS.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Localization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MacroEngine">
+      <HintPath>..\..\lib\Kentico\10\CMS.MacroEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MediaLibrary">
+      <HintPath>..\..\lib\Kentico\10\CMS.MediaLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MediaLibrary.Web.UI">
+      <HintPath>..\..\lib\Kentico\10\CMS.MediaLibrary.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Membership, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.OnlineMarketing">
+      <HintPath>..\..\lib\Kentico\10\CMS.OnlineMarketing.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.PortalEngine, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.PortalEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Scheduler">
+      <HintPath>..\..\lib\Kentico\10\CMS.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.SiteProvider, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Kentico\10\CMS.SiteProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.UIControls">
+      <HintPath>..\..\lib\Kentico\10\CMS.UIControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebAnalytics">
+      <HintPath>..\..\lib\Kentico\10\CMS.WebAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebAnalytics.Web.UI">
+      <HintPath>..\..\lib\Kentico\10\CMS.WebAnalytics.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebApi">
+      <HintPath>..\..\lib\Kentico\10\CMS.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebDAV">
+      <HintPath>..\..\lib\Kentico\10\CMS.WebDAV.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.1.2\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.8.4.0\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Licensing, Version=4.7.1.0, Culture=neutral, PublicKeyToken=3e7e8e3744a5c13f, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.8.4.0.19345\lib\net45\Infralution.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.2.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.2.5\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache, Version=5.5.0.0, Culture=neutral, PublicKeyToken=6876f2ea66c9f443, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.Caches.SysCache.5.5.1\lib\net461\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UCommerce, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.Admin, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.Admin.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.Infrastructure, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.Installer, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.Installer.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.NHibernate, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.Pipelines, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.Presentation, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.SystemHttp, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.SystemHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="UCommerce.SystemWeb, Version=8.4.0.19345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.8.4.0.19345\lib\net45\UCommerce.SystemWeb.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog\KenticoUrlService.cs" />
+    <Compile Include="CMSPages\DashboardWrapper.aspx.cs">
+      <DependentUpon>DashboardWrapper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMSPages\SettingsManager.aspx.cs">
+      <DependentUpon>SettingsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMSPages\PromotionManager.aspx.cs">
+      <DependentUpon>PromotionManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMSPages\OrderManager.aspx.cs">
+      <DependentUpon>OrderManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMSPages\CatalogManager.aspx.cs">
+      <DependentUpon>CatalogManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConnectionStringLocator.cs" />
+    <Compile Include="Content\ContentService.cs" />
+    <Compile Include="Content\DomainService.cs" />
+    <Compile Include="Content\ExtensionMethods.cs" />
+    <Compile Include="Content\ImageService.cs" />
+    <Compile Include="Content\KenticoContentTreeNodeConverter.cs" />
+    <Compile Include="Content\KenticoContentTreeService.cs" />
+    <Compile Include="Content\KenticoImageTreeNodeConverter.cs" />
+    <Compile Include="Content\KenticoImageTreeService.cs" />
+    <Compile Include="Email\EmailService.cs" />
+    <Compile Include="Ems\AbandonedBasketActivityLogger.cs" />
+    <Compile Include="Ems\Activities\UCommerceActivitiesSettingsKeys.cs" />
+    <Compile Include="Ems\Activities\UCommerceActivityTypes.cs" />
+    <Compile Include="Ems\Activities\UcommerceActivityTypeService.cs" />
+    <Compile Include="Ems\ActivityLoggerKenticoEmsActivities.cs" />
+    <Compile Include="Ems\AddDetailsToContact.cs" />
+    <Compile Include="Ems\Api\UcommerceProductsController.cs" />
+    <Compile Include="Ems\ConversionValueService.cs" />
+    <Compile Include="Ems\IAbandonedBasketActivityLogger.cs" />
+    <Compile Include="Ems\IActivityLogger.cs" />
+    <Compile Include="Ems\IGetConversionValue.cs" />
+    <Compile Include="Ems\IProvideCurrentOrderGuid.cs" />
+    <Compile Include="Ems\IFindAbandonedBaskets.cs" />
+    <Compile Include="Ems\Initializers\AbandonedBasketActivityInitializer.cs" />
+    <Compile Include="Ems\Initializers\OrderPurchasedActivityInitializer.cs" />
+    <Compile Include="Ems\Initializers\ProductAddedToBasketActivityInitializer.cs" />
+    <Compile Include="Ems\Initializers\ProductPurchasedActivityInitializer.cs" />
+    <Compile Include="Ems\Initializers\ProductRemovedFromBasketActivityInitializer.cs" />
+    <Compile Include="Ems\IProvideSelectableProducts.cs" />
+    <Compile Include="Ems\ProvideSelectableProductsForConversionSelector.cs" />
+    <Compile Include="Ems\Tasks\AbstractLogCustomConversionOnCallbackTask.cs" />
+    <Compile Include="Ems\Tasks\AddProductIdToOrderLineTask.cs" />
+    <Compile Include="Ems\Tasks\LogCustomConversionAddToBasketTask.cs" />
+    <Compile Include="Ems\Tasks\LogCustomConversionPurchaseTask.cs" />
+    <Compile Include="Ems\Tasks\LogCustomConversionQuantityChanged.cs" />
+    <Compile Include="Ems\Tasks\LogCustomConversionsForABTestingTask.cs" />
+    <Compile Include="Ems\Tasks\ProvideCurrentOrderGuid.cs" />
+    <Compile Include="Ems\Tasks\LogCustomConversionsforMVTTestingTask.cs" />
+    <Compile Include="Ems\Tasks\RegisterProductAddedToBasketActivityTask.cs" />
+    <Compile Include="Ems\Tasks\RegisterOrderPurchasedActivityTask.cs" />
+    <Compile Include="Ems\FindAbandonedBasketService.cs" />
+    <Compile Include="Ems\Tasks\MarkBasketsAsAbandonedTask.cs" />
+    <Compile Include="Ems\Tasks\RegisterQuantityChangedActivitiesTask.cs" />
+    <Compile Include="Ems\Tasks\SetAbTestInformationOnBasketTask.cs" />
+    <Compile Include="Ems\Tasks\SetContactIdOnBasketTask.cs" />
+    <Compile Include="Ems\Tasks\SetOrderGuidOnHttpContextItems.cs" />
+    <Compile Include="Ems\Tasks\SetMvtTestInformationOnBasketTask.cs" />
+    <Compile Include="Ems\Tasks\SetSiteIdOnBasketTask.cs" />
+    <Compile Include="Ems\Tasks\StatisticsCodesDto.cs" />
+    <Compile Include="Ems\UcommerceSettingsKeys.cs" />
+    <Compile Include="Globalization\CultureInfo.cs" />
+    <Compile Include="Globalization\IKenticoLocalizationContext.cs" />
+    <Compile Include="Globalization\KenticoCultureInfoProvider.cs" />
+    <Compile Include="Globalization\KenticoLocalizationContext.cs" />
+    <Compile Include="Globalization\LanguageService.cs" />
+    <Compile Include="Infrastructure\KenticoHttpContextProvider.cs" />
+    <Compile Include="Infrastructure\IKenticoHttpContextProvider.cs" />
+    <Compile Include="Infrastructure\IKenticoServiceProvider.cs" />
+    <Compile Include="Infrastructure\KenticoServiceProvider.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="Logging\LoggingService.cs" />
+    <Compile Include="Macros\ActivityInfoMethods.cs" />
+    <Compile Include="Macros\Fields\GenericDataContainer.cs" />
+    <Compile Include="Macros\Fields\GenericFieldContainer.cs" />
+    <Compile Include="Macros\Fields\OrderAddressMacroFields.cs" />
+    <Compile Include="Macros\Fields\OrderLineMacroFields.cs" />
+    <Compile Include="Macros\Fields\PurchaseOrderMacroFields.cs" />
+    <Compile Include="Macros\ICheckActivityLinkedToProduct.cs" />
+    <Compile Include="Macros\ICheckIfBasketContainsSku.cs" />
+    <Compile Include="Macros\ICheckIfBasketHasAtLeastXProducts.cs" />
+    <Compile Include="Macros\ICheckIfbasketIsEmpty.cs" />
+    <Compile Include="Macros\IFindBasketByOrderGuid.cs" />
+    <Compile Include="Macros\IFindPlacedOrdersByEmail.cs" />
+    <Compile Include="Macros\IFindPurchaseOrdersByOrderGuid.cs" />
+    <Compile Include="Macros\Impl\BasketHasAtLeastXProducts.cs" />
+    <Compile Include="Macros\Impl\CheckActivityLinkedToProduct.cs" />
+    <Compile Include="Macros\Impl\CheckIfBasketContainsSku.cs" />
+    <Compile Include="Macros\Impl\CheckIfBasketIsEmpty.cs" />
+    <Compile Include="Macros\Impl\FindBasketByOrderGuid.cs" />
+    <Compile Include="Macros\Impl\FindOrdersByEmail.cs" />
+    <Compile Include="Macros\Impl\FindPurchaseOrdersByOrderGuid.cs" />
+    <Compile Include="Macros\MacroMethodsBasket.cs" />
+    <Compile Include="Macros\MacroMethodsOrders.cs" />
+    <Compile Include="Macros\UCommerceMacroModule.cs" />
+    <Compile Include="Macros\UCommerceMacroNamespace.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\FindAbandonedBaskets.cs" />
+    <Compile Include="Queries\ProductIdAndVariantIdView.cs" />
+    <Compile Include="Queries\AbandonedBasketDataView.cs" />
+    <Compile Include="Queries\ReadProductIdFromSkuQuery.cs" />
+    <Compile Include="Queries\ReadProductIdVariantIdFromSkuVariantSkuQuery.cs" />
+    <Compile Include="Security\AuthenticationService.cs" />
+    <Compile Include="Security\CurrentUserNameService.cs" />
+    <Compile Include="Security\LogScreenLockInterceptor.cs" />
+    <Compile Include="Security\MemberService.cs" />
+    <Compile Include="Security\UserGroupService.cs" />
+    <Compile Include="Security\UserService.cs" />
+    <Compile Include="SystemInformation\GetHostSystemInfo.cs" />
+    <Compile Include="UI\Controls\EmailControlFactory.cs" />
+    <Compile Include="UI\JavaScriptFactory.cs" />
+    <Compile Include="UI\PreventMandatoryEmailProfileInformationFromBeingNull.cs" />
+    <Compile Include="UI\RemoveCommonTabOnEmailProfileUI.cs" />
+    <Compile Include="UI\Resources\ResourcesIncludeList.cs" />
+    <Compile Include="UI\Resources\ResourcesDependencyLoader.cs" />
+    <Compile Include="UI\Resources\ResourcesIncludeListShell.cs" />
+    <Compile Include="Web\BackendLocalizationService.cs" />
+    <Compile Include="Web\UrlResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CMSFormControls\Selectors\ProductIdSelector.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <Compile Include="CMSFormControls\Selectors\ProductIdSelector.ascx.cs">
+      <DependentUpon>ProductIdSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMSFormControls\Selectors\ProductIdSelector.ascx.designer.cs">
+      <DependentUpon>ProductIdSelector.ascx.cs</DependentUpon>
+    </Compile>
+    <None Include="Configuration\Kentico.config.default">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMSPages\OrderManager.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMSResources\UCommerce\Strings.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMSPages\CatalogManager.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMSPages\PromotionManager.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMSPages\SettingsManager.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMSPages\DashboardWrapper.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

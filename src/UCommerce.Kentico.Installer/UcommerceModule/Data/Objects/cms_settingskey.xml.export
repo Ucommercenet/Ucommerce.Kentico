@@ -1,0 +1,341 @@
+﻿<cms_settingskey version="10.0">
+  <NewDataSet>
+    <cms_settingskey>
+      <KeyID>70474</KeyID>
+      <KeyName>UcommercePurchaseConversionName</KeyName>
+      <KeyDisplayName>Purchase conversion name</KeyDisplayName>
+      <KeyDescription>The custom conversion logged when a purchase is made.</KeyDescription>
+      <KeyValue>UcommercePurchaseCompleted</KeyValue>
+      <KeyType>string</KeyType>
+      <KeyCategoryID>1100</KeyCategoryID>
+      <KeyGUID>cbec17e9-645d-44f9-a9e8-2d345bc21896</KeyGUID>
+      <KeyLastModified>2018-02-22T14:15:46.9854349+01:00</KeyLastModified>
+      <KeyOrder>1</KeyOrder>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enter the name of the custom conversion you want logged when a purchase is made.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70475</KeyID>
+      <KeyName>CMSOMUCProductPurchased</KeyName>
+      <KeyDisplayName>Ucommerce Product purchased</KeyDisplayName>
+      <KeyDescription>Enables logging of an activity when a product is purchased.</KeyDescription>
+      <KeyValue>True</KeyValue>
+      <KeyType>boolean</KeyType>
+      <KeyCategoryID>1101</KeyCategoryID>
+      <KeyGUID>fc27082e-b6a7-4810-a7af-31e8cfe162f5</KeyGUID>
+      <KeyLastModified>2018-02-16T11:10:18.5874855+01:00</KeyLastModified>
+      <KeyOrder>3</KeyOrder>
+      <KeyDefaultValue>False</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enabling this allows the logging of an activity when a product is purchased.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70476</KeyID>
+      <KeyName>CMSOMCUAbandonedBasket</KeyName>
+      <KeyDisplayName>Ucommerce Abandoned basket</KeyDisplayName>
+      <KeyDescription>Enables logging of an activity when a basket is abandoned.</KeyDescription>
+      <KeyValue>True</KeyValue>
+      <KeyType>boolean</KeyType>
+      <KeyCategoryID>1101</KeyCategoryID>
+      <KeyGUID>5a30db48-8ad8-4af6-9b19-74a1663fbecf</KeyGUID>
+      <KeyLastModified>2018-02-16T11:10:18.5947335+01:00</KeyLastModified>
+      <KeyOrder>4</KeyOrder>
+      <KeyDefaultValue>False</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enabling this will allow the logging of an activity when a basket is abandoned.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70483</KeyID>
+      <KeyName>CMSOMUCRemovingProductFromBasket</KeyName>
+      <KeyDisplayName>Ucommerce Removing a product from a basket</KeyDisplayName>
+      <KeyDescription>Enables logging of activity of removing product from basket.</KeyDescription>
+      <KeyValue>True</KeyValue>
+      <KeyType>boolean</KeyType>
+      <KeyCategoryID>1101</KeyCategoryID>
+      <KeyGUID>949357e8-13f6-4320-aafd-7983e82bf0ae</KeyGUID>
+      <KeyLastModified>2018-03-07T10:59:21.2275821+01:00</KeyLastModified>
+      <KeyOrder>2</KeyOrder>
+      <KeyDefaultValue>False</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enabling this will allow logging an activity when a product is removed from the basket.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70477</KeyID>
+      <KeyName>CMSOMUCPurchaseMade</KeyName>
+      <KeyDisplayName>Ucommerce Purchase made</KeyDisplayName>
+      <KeyDescription>Allow the logging of an activity when a purchase is made.</KeyDescription>
+      <KeyValue>True</KeyValue>
+      <KeyType>boolean</KeyType>
+      <KeyCategoryID>1101</KeyCategoryID>
+      <KeyGUID>08ea5872-253c-483f-be4f-80811fef8ab7</KeyGUID>
+      <KeyLastModified>2018-02-16T11:10:18.5909241+01:00</KeyLastModified>
+      <KeyOrder>4</KeyOrder>
+      <KeyDefaultValue>False</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enabling this will allow logging an activity when a purchase is made.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70478</KeyID>
+      <KeyName>CMSOMUCAddingProductToBasket</KeyName>
+      <KeyDisplayName>Ucommerce Adding a product to a basket</KeyDisplayName>
+      <KeyDescription>Enables logging of activity of adding product to basket.</KeyDescription>
+      <KeyValue>True</KeyValue>
+      <KeyType>boolean</KeyType>
+      <KeyCategoryID>1101</KeyCategoryID>
+      <KeyGUID>eee84c5f-772a-4279-950c-825885401f02</KeyGUID>
+      <KeyLastModified>2018-02-16T11:10:47.3769571+01:00</KeyLastModified>
+      <KeyOrder>1</KeyOrder>
+      <KeyDefaultValue>False</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enabling this will allow logging an activity when a product is added to a basket.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70479</KeyID>
+      <KeyName>UcommerceAddToBasketConversionValue</KeyName>
+      <KeyDisplayName>Add to basket conversion value</KeyDisplayName>
+      <KeyDescription>Enter a number or a percentage for the value to be logged in the custom conversion.</KeyDescription>
+      <KeyValue>10%</KeyValue>
+      <KeyType>string</KeyType>
+      <KeyCategoryID>1100</KeyCategoryID>
+      <KeyGUID>a02c2d80-aa4b-446d-81fd-a34fe475f891</KeyGUID>
+      <KeyLastModified>2018-02-22T14:14:55.1391954+01:00</KeyLastModified>
+      <KeyOrder>4</KeyOrder>
+      <KeyValidation>10%</KeyValidation>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>
+        Please enter a number or percentage.
+        For example:
+        "10" will add the value 10 to the conversion.
+        "10%" will add 10 percent of the product value to the conversion.
+      </KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70480</KeyID>
+      <KeyName>UcommerceAddToBasketConversionName</KeyName>
+      <KeyDisplayName>Add to basket conversion name</KeyDisplayName>
+      <KeyDescription>The name of the custom conversion logged when a product is added to a basket.</KeyDescription>
+      <KeyValue>ProductAddedToBasketConversion</KeyValue>
+      <KeyType>string</KeyType>
+      <KeyCategoryID>1100</KeyCategoryID>
+      <KeyGUID>2c85f8cd-7c75-484e-9aa3-cce2fab097af</KeyGUID>
+      <KeyLastModified>2018-02-22T14:14:55.1101723+01:00</KeyLastModified>
+      <KeyOrder>3</KeyOrder>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enter the name of the custom conversion to be logged when a product is added to a basket.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70484</KeyID>
+      <KeyName>UcommerceRemoveFromBasketConversionName</KeyName>
+      <KeyDisplayName>Remove from basket conversion name</KeyDisplayName>
+      <KeyDescription>The name of the custom conversion logged when a product is removed from a basket.</KeyDescription>
+      <KeyType>string</KeyType>
+      <KeyCategoryID>1100</KeyCategoryID>
+      <KeyGUID>eb09af69-63d9-4237-be25-4e74ea2c29bd</KeyGUID>
+      <KeyLastModified>2018-03-08T12:44:15.5182683+01:00</KeyLastModified>
+      <KeyOrder>5</KeyOrder>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Enter the name of the custom conversion to be logged when a product is removed from a basket.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70485</KeyID>
+      <KeyName>UcommerceRemoveFromBasketConversionValue</KeyName>
+      <KeyDisplayName>Remove from basket conversion value</KeyDisplayName>
+      <KeyDescription>Enter a number or a percentage for the value to be logged in the custom conversion.</KeyDescription>
+      <KeyValue>-10%</KeyValue>
+      <KeyType>string</KeyType>
+      <KeyCategoryID>1100</KeyCategoryID>
+      <KeyGUID>45c70aa1-3630-44c6-b3e5-adabf9223dcc</KeyGUID>
+      <KeyLastModified>2018-03-08T12:44:08.9753554+01:00</KeyLastModified>
+      <KeyOrder>6</KeyOrder>
+      <KeyValidation>-10%</KeyValidation>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>
+        Please enter a number or percentage.
+        For example:
+        "10" will add the value 10 to the conversion.
+        "10%" will add 10 percent of the product value to the conversion.
+      </KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70481</KeyID>
+      <KeyName>CMSOMUCAbandonedBasketHours</KeyName>
+      <KeyDisplayName>Ucommerce Mark baskets as abandoned after (hours):</KeyDisplayName>
+      <KeyDescription>Create a scheduled task (provided by the UCommerce.Kentico.Ems.Tasks.MarkBasketsAsAbandonedTask class) to enable the Mark basket as abandoned task.</KeyDescription>
+      <KeyValue>4</KeyValue>
+      <KeyType>double</KeyType>
+      <KeyCategoryID>1101</KeyCategoryID>
+      <KeyGUID>e2f0f125-5ebd-4777-addb-e20c13bb9f2a</KeyGUID>
+      <KeyLastModified>2018-02-20T15:00:42.663413+01:00</KeyLastModified>
+      <KeyOrder>5</KeyOrder>
+      <KeyDefaultValue>4</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>Create a scheduled task (provided by the UCommerce.Kentico.Ems.Tasks.MarkBasketsAsAbandonedTask class) to enable the Mark basket as abandoned task.</KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70482</KeyID>
+      <KeyName>UcommercePurchaseConversionValue</KeyName>
+      <KeyDisplayName>Purchase conversion value</KeyDisplayName>
+      <KeyDescription>Enter a number or a percentage value.</KeyDescription>
+      <KeyValue>100%</KeyValue>
+      <KeyType>string</KeyType>
+      <KeyCategoryID>1100</KeyCategoryID>
+      <KeyGUID>dff0fe9f-1552-4394-b331-f64ef7f54c69</KeyGUID>
+      <KeyLastModified>2018-02-22T13:21:50.3540855+01:00</KeyLastModified>
+      <KeyOrder>2</KeyOrder>
+      <KeyDefaultValue>100%</KeyDefaultValue>
+      <KeyLoadGeneration>0</KeyLoadGeneration>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText>
+        Enter a number or a percentage.
+        For example:
+        "10" will add 10 to the conversion.
+        "10%" will add 10 percent of the basket value to the conversion.
+      </KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingskey>
+      <KeyID>70760</KeyID>
+      <KeyName>UcommerceAbandonedBasketPeriod</KeyName>
+      <KeyDisplayName>Abandoned Basket Period</KeyDisplayName>
+      <KeyDescription>Determines the time (in hours) that needs to pass before a basket is put into abandoned basket state</KeyDescription>
+      <KeyValue>24</KeyValue>
+      <KeyType>int</KeyType>
+      <KeyCategoryID>1105</KeyCategoryID>
+      <KeyGUID>26073eee-3097-48c4-acc4-03f4af711de4</KeyGUID>
+      <KeyLastModified>2018-11-05T15:29:00.2103643+01:00</KeyLastModified>
+      <KeyOrder>1</KeyOrder>
+      <KeyDefaultValue>24</KeyDefaultValue>
+      <KeyIsGlobal>false</KeyIsGlobal>
+      <KeyIsHidden>false</KeyIsHidden>
+      <KeyExplanationText></KeyExplanationText>
+    </cms_settingskey>
+    <cms_settingscategory>
+      <CategoryID>150</CategoryID>
+      <CategoryDisplayName>{$settingscategory.cmssettings$}</CategoryDisplayName>
+      <CategoryOrder>0</CategoryOrder>
+      <CategoryName>CMS.Settings</CategoryName>
+      <CategoryIDPath>/00000150</CategoryIDPath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryChildCount>12</CategoryChildCount>
+      <CategoryIsGroup>false</CategoryIsGroup>
+      <CategoryIsCustom>false</CategoryIsCustom>
+      <CategoryResourceID>325</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>555</CategoryID>
+      <CategoryDisplayName>{$settingscategory.cmsonlinemarketing$}</CategoryDisplayName>
+      <CategoryOrder>6</CategoryOrder>
+      <CategoryName>CMS.OnlineMarketing</CategoryName>
+      <CategoryParentID>150</CategoryParentID>
+      <CategoryIDPath>/00000150/00000555</CategoryIDPath>
+      <CategoryLevel>1</CategoryLevel>
+      <CategoryChildCount>7</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>false</CategoryIsGroup>
+      <CategoryIsCustom>false</CategoryIsCustom>
+      <CategoryResourceID>196</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>1099</CategoryID>
+      <CategoryDisplayName>Ucommerce</CategoryDisplayName>
+      <CategoryOrder>0</CategoryOrder>
+      <CategoryName>UcommerceSettings</CategoryName>
+      <CategoryParentID>150</CategoryParentID>
+      <CategoryIDPath>/00000150/00001099</CategoryIDPath>
+      <CategoryLevel>1</CategoryLevel>
+      <CategoryChildCount>1</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>false</CategoryIsGroup>
+      <CategoryResourceID>433</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>1100</CategoryID>
+      <CategoryDisplayName>Conversion tracking</CategoryDisplayName>
+      <CategoryOrder>0</CategoryOrder>
+      <CategoryName>UcommerceSettingsConversionTracking</CategoryName>
+      <CategoryParentID>1099</CategoryParentID>
+      <CategoryIDPath>/00000150/00001099/00001100</CategoryIDPath>
+      <CategoryLevel>2</CategoryLevel>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>true</CategoryIsGroup>
+      <CategoryResourceID>433</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>795</CategoryID>
+      <CategoryDisplayName>{$settingscategory.cmsonlinemarketingcontactmanagement$}</CategoryDisplayName>
+      <CategoryOrder>1</CategoryOrder>
+      <CategoryName>CMS.OnlineMarketing.ContactManagement</CategoryName>
+      <CategoryParentID>555</CategoryParentID>
+      <CategoryIDPath>/00000150/00000555/00000795</CategoryIDPath>
+      <CategoryLevel>2</CategoryLevel>
+      <CategoryChildCount>4</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>false</CategoryIsGroup>
+      <CategoryIsCustom>false</CategoryIsCustom>
+      <CategoryResourceID>253</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>598</CategoryID>
+      <CategoryDisplayName>{$settingscategory.cmsactivities$}</CategoryDisplayName>
+      <CategoryOrder>1</CategoryOrder>
+      <CategoryName>CMS.OnlineMarketing.Activities</CategoryName>
+      <CategoryParentID>795</CategoryParentID>
+      <CategoryIDPath>/00000150/00000555/00000795/00000598</CategoryIDPath>
+      <CategoryLevel>3</CategoryLevel>
+      <CategoryChildCount>9</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>false</CategoryIsGroup>
+      <CategoryIsCustom>false</CategoryIsCustom>
+      <CategoryResourceID>253</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>1101</CategoryID>
+      <CategoryDisplayName>Ucommerce</CategoryDisplayName>
+      <CategoryOrder>2</CategoryOrder>
+      <CategoryName>CMS.OnlineMarketing.Activities.Ucommerce</CategoryName>
+      <CategoryParentID>598</CategoryParentID>
+      <CategoryIDPath>/00000150/00000555/00000795/00000598/00001101</CategoryIDPath>
+      <CategoryLevel>4</CategoryLevel>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>true</CategoryIsGroup>
+      <CategoryResourceID>433</CategoryResourceID>
+    </cms_settingscategory>
+    <cms_settingscategory>
+      <CategoryID>1105</CategoryID>
+      <CategoryDisplayName>Abandoned basket</CategoryDisplayName>
+      <CategoryOrder>0</CategoryOrder>
+      <CategoryName>AbandonedBasket</CategoryName>
+      <CategoryParentID>1099</CategoryParentID>
+      <CategoryIDPath>/00000150/00001099/00001105</CategoryIDPath>
+      <CategoryLevel>2</CategoryLevel>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryIconPath></CategoryIconPath>
+      <CategoryIsGroup>true</CategoryIsGroup>
+      <CategoryResourceID>433</CategoryResourceID>
+    </cms_settingscategory>
+  </NewDataSet>
+</cms_settingskey>

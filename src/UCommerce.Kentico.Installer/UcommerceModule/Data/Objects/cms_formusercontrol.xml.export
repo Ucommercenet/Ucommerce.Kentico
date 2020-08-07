@@ -1,0 +1,37 @@
+﻿<cms_formusercontrol version="10.0">
+  <NewDataSet>
+    <cms_formusercontrol>
+      <UserControlID>706</UserControlID>
+      <UserControlDisplayName>Ucommerce Product Id Selector</UserControlDisplayName>
+      <UserControlCodeName>UcommerceProductIdSelector</UserControlCodeName>
+      <UserControlFileName>~/CMSFormControls/Selectors/ProductIdSelector.ascx</UserControlFileName>
+      <UserControlForText>false</UserControlForText>
+      <UserControlForLongText>false</UserControlForLongText>
+      <UserControlForInteger>true</UserControlForInteger>
+      <UserControlForDecimal>false</UserControlForDecimal>
+      <UserControlForDateTime>false</UserControlForDateTime>
+      <UserControlForBoolean>false</UserControlForBoolean>
+      <UserControlForFile>false</UserControlForFile>
+      <UserControlShowInBizForms>false</UserControlShowInBizForms>
+      <UserControlDefaultDataType>Text</UserControlDefaultDataType>
+      <UserControlDefaultDataTypeSize>0</UserControlDefaultDataTypeSize>
+      <UserControlShowInDocumentTypes>true</UserControlShowInDocumentTypes>
+      <UserControlShowInSystemTables>false</UserControlShowInSystemTables>
+      <UserControlShowInWebParts>true</UserControlShowInWebParts>
+      <UserControlShowInReports>false</UserControlShowInReports>
+      <UserControlGUID>e6f33233-2cdf-4d1d-b101-122c754b4947</UserControlGUID>
+      <UserControlLastModified>2018-02-26T13:00:34.2373804+01:00</UserControlLastModified>
+      <UserControlForGuid>false</UserControlForGuid>
+      <UserControlShowInCustomTables>false</UserControlShowInCustomTables>
+      <UserControlForVisibility>false</UserControlForVisibility>
+      <UserControlParameters>&lt;form version="2"&gt;&lt;field allowempty="true" column="SelectableType" columnsize="200" columntype="text" guid="cb2bfdb7-6c9c-452b-8e2d-86750af296c8" publicfield="false" reftype="Required" resolvedefaultvalue="False" visible="true"&gt;&lt;properties&gt;&lt;defaultvalue&gt;sellableproduct&lt;/defaultvalue&gt;&lt;/properties&gt;&lt;settings&gt;&lt;controlname&gt;DropDownListControl&lt;/controlname&gt;&lt;DisplayActualValueAsItem&gt;False&lt;/DisplayActualValueAsItem&gt;&lt;EditText&gt;False&lt;/EditText&gt;&lt;Options&gt;product
+productvariant
+sellableproduct&lt;/Options&gt;&lt;SortItems&gt;False&lt;/SortItems&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</UserControlParameters>
+      <UserControlForDocAttachments>false</UserControlForDocAttachments>
+      <UserControlType>2</UserControlType>
+      <UserControlIsSystem>false</UserControlIsSystem>
+      <UserControlForBinary>false</UserControlForBinary>
+      <UserControlForDocRelationships>false</UserControlForDocRelationships>
+    </cms_formusercontrol>
+  </NewDataSet>
+</cms_formusercontrol>
