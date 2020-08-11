@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Ucommerce-for-Kentico</id>
+    <version>%versionNumberToReplace%</version>
+    <title>Ucommerce for Kentico</title>
+    <authors>Ucommerce</authors>
+    <owners>Ucommerce</owners>
+    <iconUrl>https://ucommerce.net/media/1750/ucommerce-nuget-250x250.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Ucommerce for Kentico</description>
+    <tags>Ucommerce Kentico ecommerce commerce</tags> 
+    <dependencies>
+		<dependency id='uCommerce' version='[%versionNumberToReplace%]'/>
+        <dependency id='Microsoft.Web.Infrastructure' version='[1.0.0]' />
+    </dependencies>     
+  </metadata>
+</package>

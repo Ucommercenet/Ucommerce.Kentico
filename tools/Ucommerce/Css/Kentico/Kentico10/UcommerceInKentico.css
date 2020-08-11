@@ -1,0 +1,14 @@
+.cms-bootstrap .cat-ucommerce {
+  background-color: #3C43BF;
+}
+.cms-bootstrap .dashboard .cat-ucommerce .tile-icon {
+  color: #3C43BF;
+}
+.cms-bootstrap .dashboard .cat-ucommerce.tile-btn:hover {
+  border-bottom-color: #3C43BF;
+}
+
+.cms-bootstrap .cat-ucommerce .icon-app-polls {
+    font-size: 56px;
+    padding: 15px 0 1px 0;
+}

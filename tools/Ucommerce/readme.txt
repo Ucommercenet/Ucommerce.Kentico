@@ -1,0 +1,1 @@
+These folders must be deployed to the folder in which Ucommerce is installed at runtime in Kentico to kick in, e.g. /CMS/CMSModules/Ucommerce/
